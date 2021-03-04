@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap");
+* {
+  box-sizing: border-box;
+}
+.main-header {
+  background: #e696a3;
+  padding: 8px 16px;
+  width: 100%;
+  display: block;
+}
+@media (min-width: 540px) {
+  .main-header {
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+  }
+}
+.main-header_brand img {
+  height: 2rem;
+  vertical-align: middle;
+  object-fit: cover;
+}
+@media (min-width: 540px) {
+  .main-nav__items {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+  }
+}
+.main-nav_item {
+  color: white;
+  margin: 0px 8px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+@media (min-width: 540px) {
+  .main-nav_item {
+    color: white;
+    margin: 0px 16px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+  }
+}
+
+.main-nav_item:hover {
+  color: #ffe1e6;
+  border-bottom: 5px solid #ccc;
+}
+.container-img {
+  display: grid;
+  background-image: url("https://cdn.dribbble.com/users/2208826/screenshots/14288845/media/3c50d6de01f1a15f3aeb7f0121ebea2a.mp4");
+  background-size: cover;
+  background-position: left 29% bottom 40%;
+  height: 300px;
+  min-height: 700px;
+  text-align: center;
+  place-items: center;
+  margin-bottom: 5rem;
+  padding: 1rem;
+}
+
+h1 {
+  font-family: "Kaushan Script", cursive;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  color: #c57a87;
+  text-align: center;
+  font-weight: bold;
+  margin: 1rem;
+}
+.text-wrap {
+  width: 75%;
+  text-align: center;
+  margin: 2rem auto;
+  color: #000000;
+  line-height: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-family: "Poppins", sans-serif;
+}
+.background-btn {
+  margin-top: 5rem;
+}
+.background-btn:hover {
+  background: #611c27;
+  color: white;
+}
+.btn {
+  border: 2px solid #525252;
+  border-radius: 4px;
+  background: transparent;
+  padding: 4px 30px;
+  outline: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.8rem, 2vw, 1.4rem);
+  color: #525252;
+  margin: 2rem 0 2rem 0;
+  transition: 1s ease all;
+}
+.btn:hover {
+  background: white;
+  color: #c57a87;
+  border: 1px solid transparent;
+  transition: 1s ease all;
+}
+.btn-2 {
+  margin-left: 24px;
+}
+
+.offerings {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-gap: 3rem;
+  margin-top: 1.5rem;
+  padding-left: 12px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 5rem;
+  place-items: center;
+}
+.offerings p {
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  font-family: "Poppins", sans-serif;
+  margin-top: unset;
+  color: #525252;
+}
+.offerings h2 {
+  color: #c57a87;
+  text-align: center;
+  margin: 1rem 0 0.8rem 0;
+  font-family: "Kaushan Script", cursive;
+  font-size: clamp(0.8rem, 2vw, 1.5rem);
+}
+.circle {
+  background: lightblue;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+}
+.circle img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.download {
+  background: #f0e5e9;
+  color: #525252;
+  text-align: center;
+  padding: 16px 12px;
+  margin-bottom: 5rem;
+}
+
+.testimonial {
+  margin-bottom: 5rem;
+  color: #525252;
+}
+footer {
+  padding: 16px 12px;
+  background: #f0e5e9;
+  color: white;
+  text-align: center;
+}
